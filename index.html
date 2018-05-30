@@ -1,15 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+  <title>Project Ironhacks....</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="index.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Hello World!</h1>
-        <button id="btn">Click me</button>
+
+<div id="titulo" class="container-fluid">
+  <h1>
+        SEARCH NEW HOME 
+  </h1>
+</div>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div id="colIZQ" class="col-sm-2 sidenav container-fluid">
+        <!--
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+      -->
+
+    <button id="seguridad" type="button" class="btn btn-primary btn-lg btn-block container-fluid">Safety</button>
+    <button id="distancia" type="button" class="btn btn-primary btn-lg btn-block">Distance</button>
+    <button id="zonas" type="button" class="btn btn-primary btn-lg btn-block">Areas</button>
+    <button id="viviendas" type="button" class="btn btn-primary btn-lg btn-block">Affordability</button>
+
     </div>
-    <script src="index.js"></script>
-</body>
+    <!--
+    <div class=""> 
+      <h1>MAPA</h1>
+      <p>SERA QUE POR FIN SE PODRA PONER UN MAPA EN LA PARTE QUE SE QUIERE Y NO EN DONDE TOQUE??????????.....</p>
+      <hr>
+
+
+    </div>
+    -->
+    <!--
+    <div id="finalll" class="col-sm-8">
+            <div id="map"> </div>
+    </div>
+    -->
+    <div id="map" class="col-sm-8 container-fluid"></div>
+
+    <div id="colDER" class="col-sm-2 sidenav container-fluid">
+      <!--  
+        <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      -->
+    </div>
+  </div>
+</div>
+
+<div id="graficas" class="container-fluid">
+    <h1>
+      Statistics
+    </h1>
+</div>
+
+
+<!-- ======================================================================================== -->
+    <!-- PERIMTIE CARGAR EL MAPA -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCukovzLBeIKmImJT5Ged2feiOUVagsEuU&callback=initMap">
+    </script>
+    <!-- ======================================================================================== -->
+    </body>
 </html>
